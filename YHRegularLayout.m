@@ -33,11 +33,9 @@
         NSInteger originY = CGRectGetMaxY(prevLayoutAttributes.frame);
    
         
-        if(originX + maximumInteritemSpacing + currentLayoutAttributes.frame.size.width + self.sectionInset.right < self.collectionViewContentSize.width) {                      //判断添加上该item 是否回超过屏幕
+        if(originX + maximumInteritemSpacing + currentLayoutAttributes.frame.size.width + self.sectionInset.right < self.collectionViewContentSize.width ) {                      //判断添加上该item 是否回超过屏幕
             CGRect frame = currentLayoutAttributes.frame;
-            if (currentLayoutAttributes.indexPath.section != prevLayoutAttributes.indexPath.section) {//不是同一组，则从self.sectionInset.left 开始
-                frame.origin.x = self.sectionInset.left;
-            }else{
+            if (currentLayoutAttributes.indexPath.section == prevLayoutAttributes.indexPath.section) {//同一组才需要改x
                 frame.origin.x = originX + maximumInteritemSpacing;
             }
             currentLayoutAttributes.frame = frame;
@@ -46,9 +44,7 @@
         }
         else{                                                            //换行情况
             CGRect frame = currentLayoutAttributes.frame;
-            if (currentLayoutAttributes.indexPath.section != prevLayoutAttributes.indexPath.section) {//不是同一组，则从self.sectionInset.top 开始
-                frame.origin.y = self.sectionInset.top;
-            }else{
+            if (currentLayoutAttributes.indexPath.section == prevLayoutAttributes.indexPath.section) {//同一组才需要改y
                 frame.origin.y = originY + maximumLineSpacing;
             }
             frame.origin.x = self.sectionInset.left;
