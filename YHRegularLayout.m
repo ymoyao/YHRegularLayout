@@ -47,7 +47,6 @@
             if (currentLayoutAttributes.indexPath.section == prevLayoutAttributes.indexPath.section) {//同一组才需要改y
                 frame.origin.y = originY + maximumLineSpacing;
             }
-            frame.origin.x = self.sectionInset.left;
             currentLayoutAttributes.frame = frame;
         }
     }
