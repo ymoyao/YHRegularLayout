@@ -1,4 +1,4 @@
-###目录
+### 目录
 * [**前言**](#前言)
 * [**区别**](#区别)
 * [**事件响应链条**](#用法)
@@ -38,8 +38,8 @@ UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRec
 [GitHub地址](https://github.com/developeryh/YHRegularLayout)
 
 ### <a name="修复记录"></a>修复记录
-2019.7.21 (ps:感谢 @XiFengLang、@sdlbp 提的建议)
-1.修复不左对称问题
-2.修复单个label超出屏幕的情况
-3.基础数据类型被错误转换的问题
+* 2019.7.21 (ps:感谢 @XiFengLang、@sdlbp 提的建议)
+	* 1.修复不左对称问题
+	* 2.修复单个label超出屏幕的情况
+	* 3.基础数据类型被错误转换的问题
 
