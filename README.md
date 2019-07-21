@@ -13,10 +13,10 @@
 YHRegularLayout 是一种固定行 和 列间距的layout。
 无图无真相，看了图就明白他们之间的区别了
 
-####**UICollectionViewFlowLayout**
+#### **UICollectionViewFlowLayout**
 ![UICollectionViewFlowLayout.jpeg](http://upload-images.jianshu.io/upload_images/1891685-73c61deb5948fd53.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-####**YHRegularLayout**
+#### **YHRegularLayout**
 ![YHRegularLayout.jpeg](http://upload-images.jianshu.io/upload_images/1891685-0cff49b93ae74e19.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 很明显，UICollectionViewFlowLayout 在无法刚好充满屏幕时对该行的间距进行调整，使首尾刚好贴着两边。YHRegularLayout则反之，不调整间距，直接换行。
